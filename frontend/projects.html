@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Mouleeshwaran</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            min-height: 75px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        nav {
+            display: flex;
+            gap: 8px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #475569;
+            padding: 8px 15px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #2563eb;
+            background: #eff6ff;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .welcome {
+            color: #2563eb;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .page-title h1 {
+            font-size: 42px;
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+
+        .page-title p:last-child {
+            color: #64748b;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 35px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.10);
+        }
+
+        .project-number {
+            color: #2563eb;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .project-card h2 {
+            color: #0f172a;
+            margin-bottom: 20px;
+        }
+
+        .project-card p {
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 25px 0;
+        }
+
+        .tech-stack span {
+            background: #eff6ff;
+            color: #2563eb;
+            border: 1px solid #dbeafe;
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .project-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: #2563eb;
+            padding: 11px 18px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .project-btn:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: white;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+
+            .navbar {
+                padding: 15px 5%;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            main {
+                padding: 45px 15px;
+            }
+
+            .page-title h1 {
+                font-size: 34px;
+            }
+
+            .project-card {
+                padding: 25px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+             Mouleeshwaran.M
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="projects.html" class="active">
+                Projects
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-title">
+
+            <p class="welcome">
+                MY WORK
+            </p>
+
+            <h1>
+                Projects
+            </h1>
+
+            <p>
+                Selected applications I have worked on.
+            </p>
+
+        </section>
+
+
+        <section class="projects-grid">
+
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <h2>
+                    Smart Residential Parking
+                </h2>
+
+                <p>
+                    A web-based platform that helps users find and book
+                    nearby parking spaces based on location, price, and
+                    availability.
+                </p>
+
+                <p>
+                    Parking owners can list available spaces and manage
+                    bookings through the platform.
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>React.js</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>MongoDB</span>
+
+                </div>
+
+                <a
+                    href="https://mind-spark-kappa.vercel.app/"
+                    target="_blank"
+                    class="project-btn">
+
+                    View live project →
+
+                </a>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <h2>
+                    AI-Based Context-Aware Safe Route Navigation
+                </h2>
+
+                <p>
+                    A web application designed to help users select safer
+                    and more reliable routes to their destination.
+                </p>
+
+                <p>
+                    The system considers factors such as traffic, road
+                    conditions, and potential risk areas.
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React.js</span>
+                    <span>Node.js</span>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Mouleeshwaran. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
